@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin pannel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Web Page</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/dacf88b734.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style>
+		html,body{
+			padding:0px;
+			width: 100%;
+			height: 100%; 
+		}
+		.top{
+			width:100%;
+			height: 270px;
+			background: linear-gradient(to left, rgb(241, 39, 17), rgb(245, 175, 25)); 
+			position: relative;
+			z-index: -20;
+			border:none;
+		}
+		.navbar{
+			position: absolute;
+			z-index: 10;
+    		top: 32%;
+    		width: 56%;
+    		box-shadow: 0 20px 14px 0 rgba(0,0,0,0.2);
+    		left: 21%;
+		}
+		.navbar-brand,.nav-link{
+			font-size: 25px;
+			letter-spacing: 2px;2
+		}
+		.aisvg{
+			width: 20%;
+		    position: absolute;
+		    z-index: 10;
+		    top: 15%;
+		    left: 0;
+		}
+		.labwork{
+			    width: 20%;
+			    position: absolute;
+			    z-index: 10;
+			    top: 23%;
+			    left: 79%;
+		}
+		#login_arrow{
+			text-decoration: none;
+			color: gray;
+			font-size: 23px;
+    		margin-top: -18px;
+		}
+		.top img{
+			border-radius: 60%;
+		}
+		#login_arrow123{
+			text-decoration: none;
+			/*color: darkgreen;*/
+		}
+		@media (max-width: 768px){
+			.navbar{
+				width:90%;
+				top: 20%;
+				left: 6%;
+			}
+			.top{
+				height: 200px;
+				width: 104%;
+			}
+			.aisvg , .labwork{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<header id="body_head">
+		<button class="top">
+			<img src="https://media.licdn.com/dms/image/C560BAQE_hCbI4rleMA/company-logo_200_200/0?e=2159024400&v=beta&t=--7nfp4BYF9CyoZxWr7LSJ-KNo342AdDv-p48t75Wbk" class="">
+		</button>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#">My coffee Dosth</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-lg-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="./edit_info.html">My Account</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+		</header>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><h6 class="display-5" style="text-align:center;">Here Are the things that I can do</h6>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<br>
+		<br>
+		<main>
+			<div class="row" style="margin-left: 40px;">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+			<div class="card" id="cardintro" 
+			style="width: 18rem;box-shadow: 0 18px 23px 0 rgba(0,0,0,0.2);">
+			  <div class="card-body">
+			    <h5 class="card-title">Order a coffee</h5>
+			    <h6 class="card-subtitle mb-2 text-muted">Coffee Maker</h6>
+			    <p class="card-text">Hello Sir/Madam ,<br>I would help You in serving the best coffee
+			    </p>
+			    <button type="button" class="btn btn-outline-success" id="order">order</button>
+			    <button type="button" class="btn btn-outline-warning" id="abcdef" 
+			    style="margin-left: 68px;"><a href="https://timesofindia.indiatimes.com/home/headlines" id="login_arrow123">Todays New's</a></button>
+			  </div>
+			</div>
+			</div>
+			<div class="col-md-3">
+			<div class="card" style="width: 18rem;box-shadow: 0 18px 23px 0 rgba(0,0,0,0.2);">
+			  <div class="card-body">
+			    <h5 class="card-title">Set a Timer</h5>
+			    <h6 class="card-subtitle mb-2 text-muted">Coffee Maker</h6>
+			    <p class="card-text">Hello Sir/Madam ,<br>Please set a timer for your coffee to be delivered</p>
+			    <button type="button" class="btn btn-outline-primary" id="timer">Set a Timer</button>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="width: 18rem;box-shadow: 0 18px 23px 0 rgba(0,0,0,0.2);">
+			  <div class="card-body">
+			    <h5 class="card-title">Set an Alarm</h5>
+			    <h6 class="card-subtitle mb-2 text-muted">Coffee Maker</h6>
+			    <p class="card-text">Hello Sir/Madam ,<br>Please set a clock for your coffee to be delivered</p>
+			    <button type="button" class="btn btn-outline-primary" id="alarm">Set an Alarm</button>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+		<br>
+		<br>
+		<br>
+	<div class="container">
+		<div class="timer">
+			<input type="time" id="myTime">
+		</div>
+		<div class="alarm">
+			<input type="time" id="myTime">
+		</div>
+	</div>
+		</main>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+	document.querySelector("#order").addEventListener('click',(event)=>{
+		document.getElementById("order").innerText="recieved"
+		document.getElementById("abcdef").style.marginLeft="50%";
+		document.getElementById("abcdef").style.marginTop="-28%";
+		document.getElementById("cardintro").style.height="278px";
+	})
+
+	document.querySelector("#timer").addEventListener('click',(event)=>{
+
+	})
+
+	document.querySelector("#alarm").addEventListener('click',(event)=>{})
+
+	function timer(){
+
+	}
+	function clock(){
+
+	}
+</script>
+</body>
+</html>
